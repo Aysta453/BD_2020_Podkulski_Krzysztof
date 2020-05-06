@@ -16,10 +16,9 @@
     <style>
         html,
         body,
-        header,
-        .view.jarallax {
-            height: 100%;
-            min-height: 100%;
+        header{
+            height: 20%;
+
         }
 
     </style>
@@ -31,13 +30,19 @@
 <header>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <div class="container">
 
 
-            <ul class="navbar-nav mr-auto smooth-scroll">
+            <ul class="navbar-nav mr-auto ">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Główna<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-offset="90">Amerykańskie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#salon" data-offset="90">Salon</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#opis" data-offset="90">Informacje</a>
@@ -48,7 +53,7 @@
                         Marki
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="amery.html">Amerykańskie</a>
+                        <a class="dropdown-item" href="#">Amerykańskie</a>
                         <a class="dropdown-item" href="japon.html">Japońskie</a>
                         <a class="dropdown-item" href="euro.html">Europejskie</a>
                     </div>
@@ -65,10 +70,10 @@
                     <a class="nav-link" href="../shop/sklep.html" data-offset="90">Sklep</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-offset="90">Rejestracja</a>
+                    <a class="nav-link" href="rejestracja.html" data-offset="90">Rejestracja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html" data-offset="90">Logowanie</a>
+                    <a class="nav-link" href="login.html " data-offset="90">Logowanie</a>
                 </li>
             </ul>
 
@@ -77,52 +82,119 @@
 
     </nav>
 
-    <!-- Intro Section -->
-    <div id="glowna" class="view jarallax" data-jarallax='{"speed": 0.2}'>
-        <div class="mask rgba-black-light">
-            <div class="container h-100 d-flex justify-content-center align-items-center">
-                <div class="row smooth-scroll">
-                    <div class="col-md-12 text-center">
-                        <div class="text-white wow fadeInDown">
-
-                            <form>
-                                <div class="form-group">
-                                    <label>Login</label>
-                                    <input type="text" class="form-control" id="login" aria-describedby="emailHelp">
-
-                                </div>
-                                <div class="form-group">
-                                    <label>Nr telefonu</label>
-                                    <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
-
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Haslo</label>
-                                    <input type="password" class="form-control" id="pass">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-
-                                </div>
-                                <button type="submit" class="btn btn-primary">Rejestruj</button>
-                            </form>
-
-
-
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </header>
 <!-- Navigation & Intro -->
 
+<!-- Main content -->
+<main>
+    <!-- Fourth Container -->
+    <div class="container">
+        <!-- Section: Portfolio -->
+        <section id="salon" class="mb-3">
+
+            <!-- Section heading -->
+            <h3 class="text-center text-uppercase font-weight-bold mb-5 mt-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Amerykańskie</h3>
+
+            <!-- Section description -->
+            <p class="text-center black-text my-5 w-responsive mx-auto wow fadeIn" data-wow-delay="0.2s">Amerykańskie samochody do wyboru od klasyków do Mocnych Muscle Carów
+
+            </p>
+
+        </section>
+        <!-- Section: Portfolio -->
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row mb-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!-- Grid column -->
+            <div class="col-md-12 mb-5">
+
+                <div id="mdb-lightbox-ui"></div>
+
+                <!-- Full width lightbox -->
+                <div class="mdb-lightbox">
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american1.jpg" data-size="1600x1067">
+                            <img src="../img/american/american1.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center">Dodge Challenger `15</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american2.jpg" data-size="1600x1067">
+                            <img src="../img/american/american2.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center" >Dodge Viper GTS '13</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american3.jpg" data-size="1600x1067">
+                            <img src="../img/american/american3.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center ">Chevrolet Camaro `18</h5>
+                    </figure>
+                    <figure class="col-md-3">
+                        <a href="../img/american/american4.jpg" data-size="1600x1067">
+                            <img src="../img/american/american4.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center">Mustang Shelby G500</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american5.jpg" data-size="1600x1067">
+                            <img src="../img/american/american5.jpg"
+                                 class="img-fluid z-depth-1 text-center">
+                        </a>
+                        <h5 class="font-weight-bold mb-4">Chevrolet Camaro '70</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american6.jpg" data-size="1600x1067">
+                            <img src="../img/american/american6.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center">Dodge Challenger `68</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american7.jpg" data-size="1600x1067">
+                            <img src="../img/american/american7.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center">Dodge Charger `16</h5>
+                    </figure>
+
+                    <figure class="col-md-3">
+                        <a href="../img/american/american8.jpg" data-size="1600x1067">
+                            <img src="../img/american/american8.jpg"
+                                 class="img-fluid z-depth-1">
+                        </a>
+                        <h5 class="font-weight-bold mb-4 text-center">Dodge Charger R/T `70</h5>
+                    </figure>
+                </div>
+                <!-- Full width lightbox -->
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+
+    </div>
+
+    <!-- Fourth Container -->
+
+
+</main>
+<!-- Main content -->
 
 <!-- Footer -->
 <footer id="opis" class="page-footer footer-tiles text-center text-md-left pt-3">
@@ -138,9 +210,10 @@
                 <!-- About -->
                 <h5 class="text-uppercase mb-4"><strong>O Firmie</strong></h5>
 
-                <p>----Tekst----</p>
+                <p>Firma założona od podstaw, przez młodego człowieka.</p>
 
-                <p class="">----Tekst----</p>
+                <p class="">Otwarta na nowe możliwości, sprowadzanie samochód i nie tylko.</p>
+
 
                 <div class="footer-socials">
 
@@ -203,7 +276,7 @@
     <!-- Copyright -->
     <div class="footer-copyright py-3 text-center wow fadeIn" data-wow-delay="0.3s">
         <div class="container-fluid">
-            © 2020 Copyright: Krzysztof Podkulski </a>
+            © 2020 Copyright: Krzysztof Podkulski
         </div>
     </div>
     <!-- Copyright -->
