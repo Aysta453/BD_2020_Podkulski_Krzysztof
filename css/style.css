@@ -48,3 +48,129 @@
 .salon-lp fotter{
     margin: 0px;
 }
+html{
+    min-width: 450px;
+}
+figure {
+    float: right;
+    text-align: center;
+    width: 13%;
+    font-weight: lighter;
+    margin: auto 5% auto auto;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
+
+    }
+
+    .li a:hover {
+        background-color: black !important;
+    }
+
+    .navbar-brand {
+        color: #112f6b !important;
+    }
+
+    .nav-link {
+        color: #112f6b !important;
+    }
+
+    #logo_nav {
+        color: #112f6b !important;
+    }
+}
+
+@media (min-width: 991px) {
+    .navbar {
+        box-shadow: 0 0;
+    }
+
+    .navbar-brand {
+        color: white !important;
+        text-shadow: 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .top-nav-collapse {
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    }
+
+    .top-nav-collapse .nav-link {
+        color: #112f6b !important;
+        text-shadow: none;
+    }
+
+    .top-nav-collapse .navbar-brand {
+        color: #112f6b !important;
+        text-shadow: none;
+    }
+
+    .top-nav-collapse #logo_nav {
+        color: #112f6b !important;
+        text-shadow: none;
+    }
+}
+
+tooltip {
+    background: grey;
+}
+.dropdown-item:hover{
+    background-color: #174394!important;
+}
+.article{
+    font-size: 1.2rem;
+    margin-bottom: 2.1rem;
+}
+h1 strong{
+    font-size: 3rem;
+}
+@media (max-width: 450px) and (min-width: 449px) {
+    html,
+    body,
+    header,
+    .intro-3 {
+        height: 300px;
+    }
+
+    footer .intro-3 {
+        height: 20%;
+    }
+    ul{
+        padding: 0;
+        margin-left:10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 740px) {
+    html,
+    body,
+    .intro-3 {
+        height: 350px;
+    }
+
+    footer .intro-3 {
+        height: 20%;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .intro-3 {
+        height: 300px;
+    }
+
+    footer .intro-3 {
+        height: 20%;
+    }
+}
