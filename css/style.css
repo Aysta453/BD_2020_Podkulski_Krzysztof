@@ -71,15 +71,15 @@ figure {
     }
 
     .navbar-brand {
-        color: #112f6b !important;
+        color: white !important;
     }
 
     .nav-link {
-        color: #112f6b !important;
+        color: white !important;
     }
 
     #logo_nav {
-        color: #112f6b !important;
+        color: white !important;
     }
 }
 
@@ -104,17 +104,17 @@ figure {
     }
 
     .top-nav-collapse .nav-link {
-        color: #112f6b !important;
+        color: white !important;
         text-shadow: none;
     }
 
     .top-nav-collapse .navbar-brand {
-        color: #112f6b !important;
+        color: white !important;
         text-shadow: none;
     }
 
     .top-nav-collapse #logo_nav {
-        color: #112f6b !important;
+        color: white !important;
         text-shadow: none;
     }
 }
@@ -173,4 +173,7 @@ h1 strong{
     footer .intro-3 {
         height: 20%;
     }
+}
+.tlo{
+    background-image: url("../img/cars/intro.jpg");
 }

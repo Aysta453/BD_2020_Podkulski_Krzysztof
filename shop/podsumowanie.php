@@ -249,7 +249,8 @@ $kopiasilnik=$silnik;
             $sql4 = "SELECT * FROM klienci where pesel=$peselek and kod_indeks=$kodzik";
             if ($wynik4 = $polaczenie->query($sql4)) {
                 $sprawdz = $wynik4->num_rows;
-                if ($sprawdz > 0) {
+            
+                if (($sprawdz >0)&(strlen($peselek)==11)&(strlen($kodzik)==7) ) {
                     while ($wiersz = $wynik4->fetch_assoc()) {
                         echo"<form action=\"../php/zakup.php?var1=".$kopiakod."&var2=".$kopiapesel."&var3=".$kopiazmiennej."&var4=".$kopiakolor."&var5=".$kopiasilnik."\" method=\"post\">";
                         echo<<<END
@@ -261,9 +262,13 @@ $kopiasilnik=$silnik;
 END;
 
                     }
-                }
-            } else {
-                echo "<h2>Brak takiego użytkownika</h2>";
+                }else{
+                echo "<h2>Podałeś błędne dane.</h2> ";
+            }
+        }else if((strlen($peselek)==0)&(strlen($kodzik)==0)){
+                echo "<h2>Nie wpisałeś poprawnie danych.</h2> ";
+            }else{
+                echo "<h2>Brak takiego użytkownika.</h2> ";
             }
         }
 

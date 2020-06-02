@@ -68,7 +68,7 @@ WHERE id_klienta=$klient and id_pojazdu=$pojazd";
 <body>
 <h1>Witaj serdecznie,".$var3." ".$var4."</h1>
 <h2> Dziękuje bardzo za zakup samochodu ".$var1." ".$var2." z naszej strony!</h2>
-<h2>Wkrótce zadwonimy w celu umówienia się z Tobą na odbiór samochodu.</h2>
+<h2>Wkrótce zadzwonimy w celu umówienia się z Tobą na odbiór samochodu.</h2>
 
 <h4>Z konfiguracją.</h4>
 <p>Kolor: ".$var6." </p>
@@ -91,8 +91,8 @@ WHERE id_klienta=$klient and id_pojazdu=$pojazd";
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
     $mail->SMTPAuth = true;
-    $mail->Username = "aiprojektaysta@gmail.com";
-    $mail->Password = "zaq1@WSX";
+    $mail->Username = "--email---@gmail.com";
+    $mail->Password = "haslo";
     $mail->AddAddress($var9);
     $mail->WordWrap = 50;
     $mail->IsHTML(true);

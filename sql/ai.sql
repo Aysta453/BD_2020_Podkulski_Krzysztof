@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 21 Maj 2020, 17:51
+-- Czas generowania: 22 Maj 2020, 13:38
 -- Wersja serwera: 10.1.26-MariaDB
 -- Wersja PHP: 7.1.9
 
@@ -38,13 +38,6 @@ CREATE TABLE `klienci` (
   `kod_indeks` char(7) NOT NULL,
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Zrzut danych tabeli `klienci`
---
-
-INSERT INTO `klienci` (`id`, `imie`, `nazwisko`, `pesel`, `miasto`, `telefon`, `kod_indeks`, `email`) VALUES
-(3, 'Agnieszka', 'Fialkiewicz', '12312312312', 'Szebnie', '123123123', '1231231', 'afik273@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -82,14 +75,6 @@ CREATE TABLE `kontakt` (
   `temat` varchar(255) NOT NULL,
   `wiadomosc` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Zrzut danych tabeli `kontakt`
---
-
-INSERT INTO `kontakt` (`id`, `imie`, `mail`, `temat`, `wiadomosc`) VALUES
-(10, 'Krzysztof', 'krzysztof453vip@gmail.com', 'sdasasadsas', 'asdasdsadaasdsa'),
-(11, 'Krzysztof', 'krzysztof453vip@gmail.com', 'sdasda', 'sadasdas');
 
 -- --------------------------------------------------------
 
@@ -166,7 +151,7 @@ INSERT INTO `pojazdy` (`id`, `id_modelu`, `id_silnika`, `id_koloru`, `rok_produk
 (2, 2, 10, 5, 2016, 399999, 5, 'Nowy', 'Nowy samochod z fabryki.', 1),
 (3, 3, 3, 3, 2018, 1500001, 2, 'Nowy', 'Nowy samochod z fabryki.', 1),
 (4, 4, 8, 4, 2012, 125999, 200000, 'Uzywany', 'Uzywany samochod przez 2 wlascicieli, po wielu lat bezwypadkowej jazdy.', 1),
-(5, 5, 2, 2, 2013, 75499, 250000, 'Uzywany', 'Dwoch wlascicieli, kilka stluczek, mechanicznie sprawny.', 1),
+(5, 5, 4, 3, 2013, 75499, 250000, 'Uzywany', 'Dwoch wlascicieli, kilka stluczek, mechanicznie sprawny.', 1),
 (6, 6, 2, 1, 1993, 250000, 157000, 'Uzywany', 'Jeden wlasciciel, samochod mocno zmodyfikowany, glownie na wystawy.', 1);
 
 -- --------------------------------------------------------
@@ -278,7 +263,7 @@ ALTER TABLE `transakcje`
 -- AUTO_INCREMENT dla tabeli `klienci`
 --
 ALTER TABLE `klienci`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `kolory`
@@ -290,7 +275,7 @@ ALTER TABLE `kolory`
 -- AUTO_INCREMENT dla tabeli `kontakt`
 --
 ALTER TABLE `kontakt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT dla tabeli `marki`
@@ -320,7 +305,7 @@ ALTER TABLE `silniki`
 -- AUTO_INCREMENT dla tabeli `transakcje`
 --
 ALTER TABLE `transakcje`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Ograniczenia dla zrzutów tabel

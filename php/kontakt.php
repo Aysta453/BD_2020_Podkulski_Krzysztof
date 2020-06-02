@@ -39,8 +39,8 @@ if((strlen($imie)!=0)&(strlen($email)!=0)&(strlen($temat)!=0)&(strlen($text)!=0)
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
     $mail->SMTPAuth = true;
-    $mail->Username = "aiprojektaysta@gmail.com";
-    $mail->Password = "zaq1@WSX";
+    $mail->Username = "---email----@gmail.com";
+    $mail->Password = "haslo";
     $mail->AddAddress($email);
     $mail->WordWrap = 50;
     $mail->IsHTML(true);

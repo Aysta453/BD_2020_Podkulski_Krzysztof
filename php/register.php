@@ -25,14 +25,14 @@ if($polaczenie->connect_errno!=0){
             $sprawdz=$wynik->num_rows;
             if($sprawdz>0)
             {
-                $_SESSION['blad']='<span style="color:red">Nie powiodlo sie</span>';
+                $_SESSION['blad']='<b><h4 style="color:red;background-color: white;padding: 3px">Nie powiodło się</h4></b>';
                 header('Location:rejestracja.php');
 
 
             }else{
-                $sql="INSERT INTO `klienci` (`id`, `imie`, `nazwisko`, `pesel`, `miasto`, `telefon`, `kod_indeks`,`email`) VALUES (NULL, '$imie', '$nazwisko', '$pesel', '$miasto', '$telefon', '$kod_indeks','$email')";
+                $sql="INSERT INTO `klienci` (`id`, `imie`, `nazwisko`, `pesel`, `miasto`, `telefon`, `kod_indeks`, `email`) VALUES (NULL, '$imie', '$nazwisko', '$pesel', '$miasto', '$telefon', '$kod_indeks', '$email')";
                 $wynik= @$polaczenie->query($sql);
-                $_SESSION['blad']='<b><h3 style="color:forestgreen">Powiodlo sie</h3></b>';
+                $_SESSION['blad']='<b><h4 style="color:forestgreen;background-color: white;padding: 5px">Powiodło się</h4></b>';
                 header('Location:rejestracja.php');
 
             }
@@ -42,7 +42,7 @@ if($polaczenie->connect_errno!=0){
 
 
     }else{
-        $_SESSION['blad']='<b><h3 style="color:red">Nie powiodlo sie</h3></b>';
+        $_SESSION['blad']='<b><h4 style="color:red;background-color: white;padding: 3px">Nie powiodło się</h4></b>';
         header('Location:rejestracja.php');
     }
 

@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -18,134 +17,150 @@ session_start();
     <!-- Material Design Bootstrap -->
     <link href="../css/mdb.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <style>
-        html,
+    <style> html,
         body,
-        header,
-        .view.jarallax {
-            height: 100%;
-            min-height: 100%;
-        }
+        header{
+            height: 20%;
 
+        }
 
     </style>
 </head>
 
-<body class="salon-lp">
+<body class="salon-lp tlo">
+
+<!-- Navigation & Intro -->
+
 
 <!-- Navigation & Intro -->
 <header>
-
-    <!-- Navigation & Intro -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbarwow fadeIn" data-wow-delay="0.15s">
-            <div class="container">
-                <a class="navbar-brand font-weight-bold title" href="#">Rejestracja</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="list-unstyled navbar-nav mr-auto smooth-scroll">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark wow fadeIn" data-wow-delay="0.15s">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold title" href="#">Rejestracja</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="list-unstyled navbar-nav mr-auto smooth-scroll">
 
 
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Marki
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="../html/amery.html">Amerykańskie</a>
-                                <a class="dropdown-item" href="../html/japon.html">Japońskie</a>
-                                <a class="dropdown-item" href="../html/euro.html">Europejskie</a>
-                            </div>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Marki
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../html/amery.html">Amerykańskie</a>
+                            <a class="dropdown-item" href="../html/japon.html">Japońskie</a>
+                            <a class="dropdown-item" href="../html/euro.html">Europejskie</a>
+                        </div>
+                    </li>
 
-                    </ul>
-                    <ul class="navbar-nav dropdown smooth-scroll">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                        </li>
+                </ul>
+                <ul class="navbar-nav dropdown smooth-scroll">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../shop/sklep.php" data-offset="90">Sklep</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html" data-offset="90">Strona Główna</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../shop/sklep.php" data-offset="90">Sklep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" data-offset="90">Strona Główna</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
 
+</header>
+<!-- Navigation & Intro -->
 
-    <!-- Intro Section -->
-    <div id="glowna" class="view jarallax" data-jarallax='{"speed": 0.2}'>
-        <div class="mask rgba-black-light">
-            <div class="container h-100 d-flex justify-content-center align-items-center">
-                <div class="row smooth-scroll ">
-                    <div class="col-md-12 text-center">
-                        <div class="text-black wow fadeInDown">
-                        <div class="log pl-5 pb-4 pr-5 pt-5" style="background-color: rgba(255,255,255,0.5);">
+<!-- Main content -->
+<main>
+
+    <!-- Fourth Container -->
+    <div class="container ">
+        <div class=" mt-5 h-100 d-flex justify-content-center align-items-center">
+            <div class="row smooth-scroll ">
+                <div class="col-12 text-center mt-2">
+                    <div class="text-black wow fadeInDown">
+                        <div class="log pl-5 pb-4 pr-5 pt-2" style="background-color: rgba(255,255,255,0.5);">
                             <form method="post" action="register.php">
                                 <div class="form-group">
-                                    <h2><strong>Imię: </strong></h2>
+                                    <h4><strong>Imię: </strong></h4>
                                     <input type="text" name="imie" class="form-control" id="imie">
 
                                 </div>
                                 <div class="form-group">
-                                    <h2><strong>Nazwisko: </strong></h2>
+                                    <h4><strong>Nazwisko: </strong></h4>
                                     <input type="text" name="nazwisko" class="form-control" id="nazwisko">
 
                                 </div>
                                 <div class="form-group">
-                                    <h2><strong>Pesel: </strong></h2>
+                                    <h4><strong>Pesel: </strong></h4>
                                     <input type="text"  name="pesel" class="form-control" id="pesel">
-                                    <h4><strong>Musi być złożony z 11 cyfr. </strong></h4>
+                                    <h5><strong>Musi być złożony z 11 cyfr. </strong></h5>
 
                                 </div>
                                 <div class="form-group">
-                                    <h2><strong>Miasto: </strong></h2>
+                                    <h4><strong>Miasto: </strong></h4>
                                     <input type="text" name="miasto" class="form-control" id="miasto">
 
                                 </div>
                                 <div class="form-group">
-                                    <h2><strong>E-mail: </strong></h2>
+                                    <h4><strong>E-mail: </strong></h4>
                                     <input type="text" name="email" class="form-control" id="email">
 
                                 </div>
                                 <div class="form-group">
-                                     <h2><strong>Telefon: </strong></h2>
+                                    <h4><strong>Telefon: </strong></h4>
                                     <input type="text" name="telefon" class="form-control" id="telefon">
-                                    <h4><strong>Musi być złożony z 9 cyfr. </strong></h4>
+                                    <h5><strong>Musi być złożony z 9 cyfr. </strong></h5>
                                 </div>
                                 <div class="form-group">
-                                    <h2><strong>Kod dostępu: </strong></h2>
+                                    <h4><strong>Kod dostępu: </strong></h4>
                                     <input type="text" name="kod_indeks" class="form-control" id="kod_indeks">
-                                    <h4><strong>Musi być złożony z 7 znaków. </strong></h4>
+                                    <h5><strong>Musi być złożony z 7 znaków. </strong></h5>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Utwórz użytkownika</button>
                             </form>
-
+                            <?php
+                            if(isset($_SESSION['blad'])){
+                                echo $_SESSION['blad'];
+                                unset($_SESSION['blad']);
+                            }
+                            ?>
                         </div>
 
 
 
-
-                        </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-
-</header>
-
+    </div>
 
 
+
+    </div>
+
+
+
+
+</main>
+<!-- Main content -->
+
+<!-- Footer -->
+<!-- Footer -->
+<!--  SCRIPTS  -->
+<!--  JQuery  -->
 <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 <!--  Bootstrap tooltips  -->
 <script type="text/javascript" src="../js/popper.min.js"></script>

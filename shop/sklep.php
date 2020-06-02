@@ -71,9 +71,9 @@ function dokonanie($var){
                             Marki
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="..html/amery.html">Amerykańskie</a>
-                            <a class="dropdown-item" href="..html/japon.html">Japońskie</a>
-                            <a class="dropdown-item" href="..html/euro.html">Europejskie</a>
+                            <a class="dropdown-item" href="../html/amery.html">Amerykańskie</a>
+                            <a class="dropdown-item" href="../html/japon.html">Japońskie</a>
+                            <a class="dropdown-item" href="../html/euro.html">Europejskie</a>
                         </div>
                     </li>
 
