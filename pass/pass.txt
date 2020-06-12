@@ -1,0 +1,11 @@
+Poczta Gmail
+login: aiprojektaysta@gmail.com
+hasło: zaq1@WSX
+
+Oracle
+Login: krzysiek
+Hasło: Kris4539
+Nazwa Bazy danych: bd_projekt
+(Dla szybszego dostępu)
+Admin w Stronie: Login: brak
+		 Hasło: brak
